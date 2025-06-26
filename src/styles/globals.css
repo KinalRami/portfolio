@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+body {
+  @apply text-zinc-900 bg-white dark:bg-zinc-900 dark:text-white ;
+  font-family: var(--font-openSans);
+}
+
+.open-sans {
+  font-family: var(--font-openSans);
+}
+
+.oswald {
+  font-family: var(--font-oswald);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
