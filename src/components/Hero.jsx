@@ -49,7 +49,7 @@ export default function HeroSection() {
           />
         </motion.p>
 
-        <p className="mt-4 text-xs sm:text-md text-gray-300 max-w-xl mx-auto leading-relaxed">
+        <p className="mt-4 text-xs md:text-lg text-gray-300 max-w-xl mx-auto leading-relaxed">
           Building responsive, high-performance websites with<br/> Vue, Nuxt, React, Next & Tailwind.<br />
           Clean code. Pixel-perfect UI. Seamless UX.
         </p>
