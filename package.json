@@ -2,12 +2,10 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kinalrami.github.io/portfolio",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "deploy": "gh-pages -d out",
     "lint": "next lint"
   },
   "dependencies": {
