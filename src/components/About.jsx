@@ -5,7 +5,7 @@ export default function About() {
       className="bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100 py-20 px-6"
     >
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8">About Me</h2>
 
         <p className="text-lg text-zinc-500 dark:text-zinc-400 leading-relaxed">
           I’m <span className="text-white font-medium">Kinal Rami</span>, a passionate frontend developer with strong expertise in{' '}

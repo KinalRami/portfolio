@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Kinal Rami Portfolio',
   description: 'Frontend Developer',
   icons: {
-    icon: '/kinalrami-favicon.ico', 
+    icon: '/favicon.ico', 
   },
 }
 
@@ -17,11 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${openSans.variable} ${oswald.variable} antialiased`}
-      >
+      <body className={`${openSans.variable} ${oswald.variable} antialiased`}>
         <Header/>
-         <main className="relative z-0 -top-4">
+        <main className="relative z-0 -top-4">
           {children}
         </main>
       </body>

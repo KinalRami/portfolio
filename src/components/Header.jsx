@@ -16,8 +16,17 @@ export default function Header() {
       setScrolled(window.scrollY > 10)
     }
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+     // Prevent scroll when menu is open
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      document.body.style.overflow = '' 
+    }
+  }, [isOpen])
 
   const scrollToSection = (id) => {
     const el = document.getElementById(id)
@@ -30,10 +39,9 @@ export default function Header() {
   const navLinks = [
     { href: '#hero', label: 'Home' },
     { href: '#about', label: 'About' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#projects', label: 'Projects' },
-    // { href: '#resume', label: 'Resume' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#features', label: 'Features' },
+    { href: '#portfolio', label: 'Portfolio' },
+    { href: '#resume', label: 'Resume' },
   ]
 
   return (
@@ -42,11 +50,11 @@ export default function Header() {
         scrolled ? 'bg-white/90 dark:bg-zinc-900/80 shadow-lg backdrop-blur-md' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
+      <div className="md:max-w-7xl md:mx-auto px-6 flex items-center justify-between h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/new-logo.png"
+            src="/images/logo.png"
             alt="Kinal Rami Logo"
             width={120}
             height={20}
