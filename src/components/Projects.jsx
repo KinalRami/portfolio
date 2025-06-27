@@ -50,7 +50,7 @@ export default function Projects() {
   return (
     <section
       id="portfolio"
-      className="bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100 py-20 px-6"
+      className="relative before:content-[''] before:block before:h-20 before:-mt-20 before:invisible bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100 pt-20 px-6"
     >
       <div className="max-w-6xl mx-auto">
         <p className="text-sky-500 font-semibold uppercase text-center">Visit my portfolio</p>
@@ -100,6 +100,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
+      <hr className="border-t border-zinc-800 dark:border-zinc-700 mt-12 opacity-30" />
     </section>
   );
 }

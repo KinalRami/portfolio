@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <div className="space-y-24 scroll-smooth">
+    <div className="scroll-smooth">
       <Hero/>
       <About />
       <Features/>

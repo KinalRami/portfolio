@@ -21,9 +21,9 @@ export default function Contact() {
   }
 
   return (
-    <footer className="bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100 pt-12 px-6">
+    <footer className="bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100 px-6">
       {/* Bottom bar */}
-      <div className="border-t border-zinc-700 max-w-7xl mx-auto flex flex-col justify-center items-center text-xs py-6 text-gray-500">
+      <div className="flex flex-col justify-center items-center text-xs py-6 text-gray-500">
         <Link href="/" className="mb-2">
           <Image
             src="/images/logo.png"

@@ -52,7 +52,10 @@ export default function ResumeTabs() {
   const [activeTab, setActiveTab] = useState("experience");
 
   return (
-    <section className="bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100 py-16 px-6 md:px-20" id="resume">
+    <section 
+      id='resume'
+      className="relative before:content-[''] before:block before:h-20 before:-mt-20 before:invisible bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100 pt-20 px-6"
+    >
       <div className="text-center mb-12">
         <p className="text-sky-500 font-semibold">3+ YEARS OF EXPERIENCE</p>
         <h2 className="text-4xl font-bold text-gray-100 mt-2">My Resume</h2>
@@ -136,6 +139,7 @@ export default function ResumeTabs() {
           </div>
         )}
       </div>
+      <hr className="border-t border-zinc-800 dark:border-zinc-700 mt-12 opacity-30" />
     </section>
   );
 }
