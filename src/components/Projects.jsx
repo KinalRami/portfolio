@@ -45,6 +45,14 @@ export default function Projects() {
       tech: ['Nuxt 3', 'Tailwind CSS', 'REST API', 'Directus'],
       liveUrl: 'https://7span.com',
     },
+    {
+      title: 'Keynull – Personal Portfolio',
+      description:
+        'A modern personal portfolio built with Next.js and Tailwind CSS. Designed and developed to showcase projects and experience in a clean, responsive layout.',
+      image: '/images/keynull.png', 
+      tech: ['Next.js', 'React', 'Tailwind CSS'],
+      liveUrl: 'https://keynull.vercel.app/',
+    }
   ];
 
   return (

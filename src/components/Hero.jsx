@@ -76,7 +76,11 @@ export default function HeroSection() {
 
       {/* Scroll Down Arrow */}
       <Link
-        href="#about"
+        href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+        }}
         className="absolute bottom-1 w-10 left-[calc(50%-6px)] md:left-[calc(50%-10px)] transform -translate-x-1/2 z-20 flex flex-col items-center group animate-bounce"
       >
         <span className="text-[10px] md:text-xs [writing-mode:vertical-rl] text-gray-300 group-hover:text-white uppercase tracking-widest">
