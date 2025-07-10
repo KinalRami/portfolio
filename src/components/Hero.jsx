@@ -8,7 +8,7 @@ import { ArrowDown, Github, Linkedin } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
+    <section id='hero' className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
       {/* Background Image */}
       <Image
         src="/images/hero-background.jpg" 

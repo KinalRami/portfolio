@@ -5,6 +5,7 @@ import {
   Phone,
   Mail,
   MapPin,
+  Linkedin
 } from "lucide-react";
 
 export default function ResumeTabs() {
@@ -127,15 +128,25 @@ export default function ResumeTabs() {
         {activeTab === "contacts" && (
           <div className="text-gray-300 space-y-4">
             <h3 className="text-xl font-semibold text-sky-400">Contact Details</h3>
-            <div className="flex items-center gap-3">
-              <Phone size={16} className="text-sky-400" /> +91 8128349636
-            </div>
-            <div className="flex items-center gap-3">
-              <Mail size={16} className="text-sky-400" /> ramikinal0501@gmail.com
-            </div>
             {/* <div className="flex items-center gap-3">
-              <MapPin size={16} className="text-sky-400" /> Ahmedabad
+              <Phone size={16} className="text-sky-400" /> +91 8128349636
             </div> */}
+            <div className="flex items-center gap-3">
+              <a
+                href="https://linkedin.com/in/kinal-rami/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:underline"
+              >
+                <Linkedin size={16} className="text-sky-400" /> Connect on LinkedIn
+              </a>
+            </div>
+            <div className="flex items-center gap-3">
+              <Mail size={16} className="text-sky-400" /> 
+                <a href="mailto:ramikinal0501@gmail.com" className="hover:underline">
+                  ramikinal0501@gmail.com
+                </a>
+            </div>
           </div>
         )}
       </div>

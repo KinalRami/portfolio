@@ -34,11 +34,11 @@ export default function Header() {
   }
 
   const navLinks = [
-    { href: '#hero', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#features', label: 'Features' },
-    { href: '#portfolio', label: 'Portfolio' },
-    { href: '#resume', label: 'Resume' },
+    { href: 'hero', label: 'Home' },
+    { href: 'about', label: 'About' },
+    { href: 'features', label: 'Features' },
+    { href: 'portfolio', label: 'Portfolio' },
+    { href: 'resume', label: 'Resume' },
   ]
 
   return (
@@ -64,13 +64,17 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 text-xs uppercase font-medium text-gray-800 dark:text-gray-200">
           {navLinks.map(({ href, label }) => (
-            <button
+            <a
               key={href}
-              onClick={() => scrollToSection(href.replace('#', ''))}
+              href={href}
+              onClick={(e) => {
+                e.preventDefault()
+                scrollToSection(href.replace('#', ''))
+              }}
               className="transition uppercase cursor-pointer"
             >
               {label}
-            </button>
+            </a>
           ))}
         </nav>
 
@@ -92,13 +96,17 @@ export default function Header() {
           {/* Mobile Fullscreen Menu */}
           <div className="fixed inset-0 z-[100] bg-white dark:bg-zinc-900 w-full h-full flex flex-col items-center justify-center gap-8 text-gray-900 dark:text-white text-lg font-semibold transition-all duration-300 ease-in-out">
             {navLinks.map(({ href, label }) => (
-              <button
+              <a
                 key={href}
-                onClick={() => scrollToSection(href.replace('#', ''))}
+                href={href}
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(href.replace('#', ''))
+                }}
                 className="transition-all hover:text-blue-500"
               >
                 {label}
-              </button>
+              </a>
             ))}
           </div>
         </>
