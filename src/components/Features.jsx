@@ -52,7 +52,7 @@ export default function Features() {
     <section id='features' className="relative before:content-[''] before:block before:h-20 before:-mt-20 before:invisible bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100 pt-20 px-6">
       <div className='max-w-6xl mx-auto'>
         <p className="text-sky-500 font-semibold uppercase text-center">Features</p>
-      <h2 className="text-4xl font-bold mt-2 mb-8 text-white text-center">What I Do</h2>
+      <h2 className="text-4xl font-bold mt-2 mb-8 dark:text-white text-center">What I Do</h2>
       <div className="grid md:grid-cols-3 gap-6">
         {services.map((service, index) => (
           <div
@@ -60,7 +60,7 @@ export default function Features() {
             className="bg-zinc-800 rounded-lg p-6 shadow hover:shadow-lg transition-shadow duration-300"
           >
             <div className="mb-4">{service.icon}</div>
-            <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
+            <h3 className="text-lg text-white font-semibold mb-2">{service.title}</h3>
             <p className="text-sm text-gray-300">{service.description}</p>
           </div>
         ))}

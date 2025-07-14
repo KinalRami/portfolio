@@ -25,12 +25,21 @@ export default function Contact() {
       {/* Bottom bar */}
       <div className="flex flex-col justify-center items-center text-xs py-6 text-gray-500">
         <Link href="/" className="mb-2">
+        {/* Light mode logo */}
           <Image
-            src="/images/logo.png"
-            alt="Kinal Rami Logo"
+            src="/images/logo_light.png"
+            alt="Kinal Rami Logo - Light"
             width={120}
             height={20}
-            className="w-auto"
+            className="w-auto block dark:hidden"
+          />
+          {/* Dark mode logo */}
+          <Image
+            src="/images/logo.png"
+            alt="Kinal Rami Logo - Dark"
+            width={120}
+            height={20}
+            className="w-auto hidden dark:block"
           />
         </Link>
         <p>© {new Date().getFullYear()} All rights reserved by Kinal Rami.</p>

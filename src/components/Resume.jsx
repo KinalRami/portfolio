@@ -59,7 +59,7 @@ export default function ResumeTabs() {
     >
       <div className="text-center mb-12">
         <p className="text-sky-500 font-semibold">3+ YEARS OF EXPERIENCE</p>
-        <h2 className="text-4xl font-bold text-gray-100 mt-2">My Resume</h2>
+        <h2 className="text-4xl font-bold dark:text-gray-100 mt-2">My Resume</h2>
       </div>
 
       {/* Tabs */}
@@ -89,7 +89,7 @@ export default function ResumeTabs() {
                 className="bg-zinc-800 rounded-lg p-6 border-l-4 border-sky-500 shadow-lg"
               >
                 <p className="text-sm text-sky-400 font-medium">{item.period}</p>
-                <h3 className="text-lg font-semibold mt-1">{item.company}</h3>
+                <h3 className="text-lg text-white font-semibold mt-1">{item.company}</h3>
                 <p className="text-sm text-gray-400">{item.role}</p>
                 <ul className="text-sm text-gray-300 mt-3 list-disc pl-5 space-y-1">
                   {item.description.map((desc, i) => (
@@ -115,7 +115,7 @@ export default function ResumeTabs() {
                 className="bg-zinc-800 rounded-lg p-6 border-l-4 border-sky-500 shadow-lg"
               >
                 <p className="text-sm text-sky-400 font-medium">{edu.year}</p>
-                <h3 className="text-lg font-semibold mt-1">{edu.title}</h3>
+                <h3 className="text-lg text-white font-semibold mt-1">{edu.title}</h3>
                 <p className="text-sm text-gray-400">{edu.institute}</p>
                 <div className="text-sm text-sky-500 mt-3 font-bold">
                   {edu.score}
@@ -126,7 +126,7 @@ export default function ResumeTabs() {
         )}
 
         {activeTab === "contacts" && (
-          <div className="text-gray-300 space-y-4">
+          <div className="dark:text-gray-300 space-y-4">
             <h3 className="text-xl font-semibold text-sky-400">Contact Details</h3>
             {/* <div className="flex items-center gap-3">
               <Phone size={16} className="text-sky-400" /> +91 8128349636
